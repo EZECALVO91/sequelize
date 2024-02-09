@@ -27,7 +27,8 @@ moviesControlador = {
             where: {
             rating: { [db.Sequelize.Op.gte]: 8},
         },
-            order: [["rating", "DESC"]],
+            order: [["rating", "DESC"],
+                    ['release_date', 'DESC']],
             limit : 5
         })
             .then(function(peliculas){
