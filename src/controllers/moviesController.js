@@ -25,9 +25,10 @@ moviesControlador = {
     recomended: (req, res) => {
         db.Movies.findAll({
             where: {
-            rating: { [db.Sequelize.Op.gte]: 6},
+            rating: { [db.Sequelize.Op.gte]: 8},
         },
             order: [["rating", "DESC"]],
+            limit : 5
         })
             .then(function(peliculas){
                 res.render('recommendedMovies', {peliculas:peliculas});

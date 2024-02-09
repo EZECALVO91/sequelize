@@ -2,6 +2,9 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  text-decoration: none;
+  list-style:decimal;
+  
 }
 body {
   padding: 50px;
@@ -9,7 +12,7 @@ body {
 }
 
 a {
-  color: #00B7FF;
+  color: #000000;
 }
 img{
   width: 100%;
